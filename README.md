@@ -35,7 +35,7 @@ Se crea el esqueleto de la app
  ng new npa-micro-front-mofe --create-application=false
 ```
 
-![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion.png)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion.PNG)
 
 
 ## Creación del Host 
@@ -46,7 +46,7 @@ Conocido como el "CONTENDEDOR" del sitio, normalmente se declara como shell, se 
 ng generate application mf-shell --style=scss --routing=true
 ```
 
-![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion-shell.png)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion-shell.PNG)
 
 ## Creación de un Microfront 
 
@@ -57,8 +57,8 @@ ng generate application mf-payments --style=scss --routing=false
 ng generate application mf-shopping --style=scss --routing=false 
 ```
 
-![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion-mf1.png)
-![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion-mf2.png)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion-mf1.PNG)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion-mf2.PNG)
 
 ## Creación de una Lubreria 
 
@@ -68,7 +68,7 @@ Aplicación con la libreria de la aplicación, para compartir los componentes y 
 ng generate library commons-lib 
 ```
 
-![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion-library.png)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/creacion-library.PNG)
 
 ## Instalación libreriaModule Federation
 
@@ -78,7 +78,7 @@ Libreria para control de la federación de los modulos
 npm i -D @angular-architects/module-federation
 ```
 
-![](https://github.com/potier97/angular-microfront/blob/master/assets/dependency-mofe.png)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/dependency-mofe.PNG)
 
 ## Agregar la herramienta a cada Modulo
 
@@ -92,7 +92,7 @@ Se configura para el Shell
 ng add @angular-architects/module-federation --project mf-shell --port 4200 --type host
 ```
 
-![](https://github.com/potier97/angular-microfront/blob/master/assets/mf-configuration.png)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/mf-configuration.PNG)
 
 Configuración Microfronends
 Se debe tener en cuenta:
@@ -105,10 +105,10 @@ ng add @angular-architects/module-federation --project mf-payments --port 4208 -
 ng add @angular-architects/module-federation --project mf-shopping --port 4210 --type remote
 ```
 
-![](https://github.com/potier97/angular-microfront/blob/master/assets/mf-configuration-1.png)
-![](https://github.com/potier97/angular-microfront/blob/master/assets/mf-configuration-2.png)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/mf-configuration-1.PNG)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/mf-configuration-2.PNG)
 
 Posterior a la modificación de los microfront con el CLI se hace la configuración del shell en el webcongif para configurar los puertos definidos
 
 
-![](https://github.com/potier97/angular-microfront/blob/master/assets/puertos-shell.png)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/puertos-shell.PNG)
