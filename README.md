@@ -29,6 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Creación del Proyecto
 
 Se crea el esqueleto de la app
+![Basado en](https://www.youtube.com/watch?v=12x2QpDCsfk&ab_channel=LogiDev)
 
 ```
  ng new npa-micro-front-mofe --create-application=false
@@ -82,6 +83,10 @@ npm i -D @angular-architects/module-federation
 ## Agregar la herramienta a cada Modulo
 
 Se configura los projects en los que ejecutan componentes o shell de Angular
+Se configura para el Shell
+ - Project -> Nombre del micro
+ - Port -> Puerto en el que corre
+ - Type host -> Siempre seran host para la shells
 
 ```
 ng add @angular-architects/module-federation --project mf-shell --port 4200 --type host
@@ -89,3 +94,21 @@ ng add @angular-architects/module-federation --project mf-shell --port 4200 --ty
 
 ![](https://github.com/potier97/angular-microfront/blob/master/assets/mf-configuration.png)
 
+Configuración Microfronends
+Se debe tener en cuenta:
+ - Project -> Nombre del micro
+ - Port -> Puerto en el que corre
+ - Type remote -> Siempre seran remote para los micros
+
+```
+ng add @angular-architects/module-federation --project mf-payments --port 4208 --type remote
+ng add @angular-architects/module-federation --project mf-shopping --port 4210 --type remote
+```
+
+![](https://github.com/potier97/angular-microfront/blob/master/assets/mf-configuration-1.png)
+![](https://github.com/potier97/angular-microfront/blob/master/assets/mf-configuration-2.png)
+
+Posterior a la modificación de los microfront con el CLI se hace la configuración del shell en el webcongif para configurar los puertos definidos
+
+
+![](https://github.com/potier97/angular-microfront/blob/master/assets/puertos-shell.png)
