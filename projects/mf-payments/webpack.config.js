@@ -2,14 +2,14 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 
 module.exports = withModuleFederationPlugin({
 
-  name: 'mf-payments',
+  name: 'mfPayments',
 
   exposes: {
-    './Component': './projects/mf-payments/src/app/app.component.ts',
+    './PaymentComponent': './projects/mf-payments/src/app/payment/payment.component.ts',
   },
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },
-
+  sharedMappings: ["@commons-lib"],
 });

@@ -2,29 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Creación del Proyecto
 
@@ -112,3 +96,57 @@ Posterior a la modificación de los microfront con el CLI se hace la configuraci
 
 
 ![](https://github.com/potier97/angular-microfront/blob/master/assets/puertos-shell.PNG)
+
+
+## Generar Modulos dentro de los MF
+
+Se ejecutan los comandos normalmente como se hace en cualquier proyecto de angular, pero se incluye el nombre del proyecto
+
+```
+ng generate module products --project mf-shopping
+```
+
+![](https://github.com/potier97/angular-microfront/blob/master/assets/modulos.PNG)
+
+
+## Generar Archivo de Rutas dentro de los MF
+
+Se ejecutan los comandos normalmente como se hace en cualquier proyecto de angular, pero se incluye el nombre del proyecto
+
+```
+ng generate module app-routing --flat --module=app --project mf-shopping
+```
+
+![](https://github.com/potier97/angular-microfront/blob/master/assets/routes.PNG)
+
+
+## Generar Archivo de Componentes dentro de los MF
+
+Se ejecutan los comandos normalmente como se hace en cualquier proyecto de angular, además se le indica el nombre del micro y el nombre del modulo
+
+```
+ng generate component products  --module=products --project mf-shopping   
+```
+
+![](https://github.com/potier97/angular-microfront/blob/master/assets/components.PNG)
+
+Componentes anidados
+
+```
+ng generate component products  --module=products --project mf-shopping   
+```
+![](https://github.com/potier97/angular-microfront/blob/master/assets/nested-components.PNG)
+
+---------------------------------------------------------------------
+
+## Commons Lib
+
+Se debe tratar como una dependencia más del proyecto, por ende se debe de compilar previamente, es la unica que tiene  un package.json adicional, por lo tanto si se comparten las mismas dependencias con el proyecto general y la libreria, se debe´ra de instalar la misma versión.
+
+Se configura el alias del tsconfig para hacer referencia a esta y poder ser llamada desde los micros
+
+![](https://github.com/potier97/angular-microfront/blob/master/assets/alias-library.PNG)
+
+Se debe de configurar cada Micro para que acepte las configuraciones de los alias
+
+![](https://github.com/potier97/angular-microfront/blob/master/assets/alias-modules.PNG)
