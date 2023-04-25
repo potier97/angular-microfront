@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ICommonProduct } from '@commons-lib';
+import { environment } from '../../environments/environment'
 
 @Component({
   standalone: true,
@@ -10,6 +11,8 @@ import { ICommonProduct } from '@commons-lib';
   imports: [CommonModule],
 })
 export class PaymentComponent implements OnInit {
+  public envName: string = environment.env;
+
   constructor() {}
 
   products: ICommonProduct[] = [];
