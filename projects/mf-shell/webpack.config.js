@@ -1,10 +1,12 @@
+const { environment } = require('./src/environments/environment');
 const { shareAll, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
+
 
 module.exports = withModuleFederationPlugin({
 
   remotes: {
-    "mfPayments": "http://localhost:4208/remoteEntry.js",
-    "mfShopping": "http://localhost:4210/remoteEntry.js",    
+    "mfPayments": `${environment.urlMf1}/remoteEntry.js`,
+    "mfShopping": `${environment.urlMf1}/remoteEntry.js`,    
   },
 
   shared: {
