@@ -60,18 +60,26 @@
 							"extraWebpackConfig": "projects/mf-shell/webpack.prod.config.js"
 						},
 						"stage": {
-							"buildOptimizer": false,
-							"optimization": false,
-							"vendorChunk": true,
-							"extractLicenses": false,
-							"sourceMap": true,
-							"namedChunks": true,
+							"budgets": [
+								{
+									"type": "initial",
+									"maximumWarning": "500kb",
+									"maximumError": "1mb"
+								},
+								{
+									"type": "anyComponentStyle",
+									"maximumWarning": "2kb",
+									"maximumError": "4kb"
+								}
+							],
 							"fileReplacements": [
 								{
 									"replace": "projects/mf-shell/src/environments/environment.ts",
 									"with": "projects/mf-shell/src/environments/environment.stage.ts"
 								}
-							]
+							],
+							"outputHashing": "all",
+							"extraWebpackConfig": "projects/mf-shell/webpack.prod.config.js"
 						},
 						"development": {
 							"buildOptimizer": false,
@@ -207,18 +215,26 @@
 							"extraWebpackConfig": "projects/mf-payments/webpack.prod.config.js"
 						},
 						"stage": {
-							"buildOptimizer": false,
-							"optimization": false,
-							"vendorChunk": true,
-							"extractLicenses": false,
-							"sourceMap": true,
-							"namedChunks": true,
+							"budgets": [
+								{
+									"type": "initial",
+									"maximumWarning": "500kb",
+									"maximumError": "1mb"
+								},
+								{
+									"type": "anyComponentStyle",
+									"maximumWarning": "2kb",
+									"maximumError": "4kb"
+								}
+							],
 							"fileReplacements": [
 								{
 									"replace": "projects/mf-payments/src/environments/environment.ts",
 									"with": "projects/mf-payments/src/environments/environment.stage.ts"
 								}
-							]
+							],
+							"outputHashing": "all",
+							"extraWebpackConfig": "projects/mf-payments/webpack.prod.config.js"
 						},
 						"development": {
 							"buildOptimizer": false,
@@ -354,18 +370,26 @@
 							"extraWebpackConfig": "projects/mf-shopping/webpack.prod.config.js"
 						},
 						"stage": {
-							"buildOptimizer": false,
-							"optimization": false,
-							"vendorChunk": true,
-							"extractLicenses": false,
-							"sourceMap": true,
-							"namedChunks": true,
+							"budgets": [
+								{
+									"type": "initial",
+									"maximumWarning": "500kb",
+									"maximumError": "1mb"
+								},
+								{
+									"type": "anyComponentStyle",
+									"maximumWarning": "2kb",
+									"maximumError": "4kb"
+								}
+							],
 							"fileReplacements": [
 								{
 									"replace": "projects/mf-shopping/src/environments/environment.ts",
 									"with": "projects/mf-shopping/src/environments/environment.stage.ts"
 								}
-							]
+							],
+							"outputHashing": "all",
+							"extraWebpackConfig": "projects/mf-shopping/webpack.prod.config.js"
 						},
 						"development": {
 							"buildOptimizer": false,
