@@ -36,7 +36,7 @@
     "build:prod:mf-shell": "ng build mf-shell",
     "build:prod:mf-payments": "ng build mf-payments",
     "build:prod:mf-shopping": "ng build mf-shopping",
-    "build:prod:all": "npm run build:prod:mf-payments && npm run build:prod:mf-shopping && npm run build:prod:mf-shell",
+    "build:prod:all": "npm run build:prod:mf-shell && npm run build:prod:mf-shopping && npm run build:prod:mf-payments",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"

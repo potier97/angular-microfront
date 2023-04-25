@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
-						"outputPath": "dist/mf-shell",
+						"outputPath": "dist",
 						"index": "projects/mf-shell/src/index.html",
 						"main": "projects/mf-shell/src/main.ts",
 						"polyfills": [
