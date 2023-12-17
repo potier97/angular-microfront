@@ -1,19 +1,9 @@
 # NpaMicroFrontMofe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
 ## Creación del Proyecto
 
 Se crea el esqueleto de la app
-![Basado en](https://www.youtube.com/watch?v=12x2QpDCsfk&ab_channel=LogiDev)
+[Basado en](https://www.youtube.com/watch?v=12x2QpDCsfk&ab_channel=LogiDev)
 
 ```
  ng new npa-micro-front-mofe --create-application=false
@@ -62,7 +52,7 @@ Libreria para control de la federación de los modulos
 npm i -D @angular-architects/module-federation
 ```
 
-![](https://github.com/potier97/angular-microfront/blob/master/assets/dependency-mofe.PNG)
+![](https://github.com/potier97/angular-microfront/assets/63369773/16eede27-c0c3-4f14-88ec-362ac92e8121)
 
 ## Agregar la herramienta a cada Modulo
 
